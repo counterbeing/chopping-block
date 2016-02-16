@@ -6,6 +6,8 @@ Bundler.require(:default)
 
 @item_list = []
 
+@flange = "flange"
+
 class Item
   attr_accessor :price, :name, :length, :quantity, :weight
 
@@ -34,7 +36,7 @@ end
 add_simple_item("castor")
 add_simple_item("three_socket_tee")
 add_simple_item("single_socket_tee")
-add_simple_item("extra_heavy_flange")
+add_simple_item(@flange)
 
 
 
@@ -70,7 +72,7 @@ end
 # How much we need to account for a flange to a tee joint
 # connection.
 def flange_offset
-  flange_base_diameter = @properties["extra_heavy_flange"]["diameter"]
+  flange_base_diameter = @properties[@flange]["diameter"]
   pipe_diameter = @properties["pipe"]["outside_diameter"]
   (flange_base_diameter/2) + (pipe_diameter/2)
 end

@@ -53,6 +53,12 @@ extra_heavy_flange:
   url: http://www.simplifiedbuilding.com/store/components/kee-klamp/60-7-extra-heavy-flange-1-1-4.html
   weight: 2.87
 
+flange:
+  quantity: 4
+  diameter: 4.02
+  price: 13.88
+  weight: 1.37
+  url: http://www.simplifiedbuilding.com/store/components/kee-klamp/61-7-flange-1-1-4.html
 
 # Pipe properties
 
