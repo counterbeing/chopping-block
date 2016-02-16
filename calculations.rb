@@ -99,4 +99,4 @@ def sum(column)
 end
 
 puts "Total cost: $#{sum("price").round(2)}"
-puts "Total weight: #{sum("weight").round(1)} lbs"
+puts "Total weight of frame: #{sum("weight").round(1)} lbs"
