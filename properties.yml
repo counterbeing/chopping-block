@@ -1,0 +1,65 @@
+# All length units are in inches.
+# All weight units are in pounds.
+
+
+# Overview
+
+block:
+  width: 84
+  length: 36
+  depth: 1.5
+  weigth: 150
+
+table:
+  width: 84
+  length: 36
+  height: 35
+  bleed: 1 # how far from the edges of the block to put the flanges
+
+pipe:
+  url: http://www.simplifiedbuilding.com/store/materials/pipe/size-7-gator-tubing-12-gage-1-1-4.html
+  size: 7
+  outside_diameter: 1.660
+  bore_diameter: 1.25
+  price: 4.79
+
+# General Materials
+
+castor:
+  price: 24.99
+  quantity: 4
+  url: http://www.simplifiedbuilding.com/store/components/kee-klamp/caster-for-pipe.html
+  weight: 5
+  wheel_and_joint_height: 4.125
+
+three_socket_tee:
+  length: 4.72
+  price: 22.06
+  quantity: 8
+  url: http://www.simplifiedbuilding.com/store/components/kee-klamp/25-7-three-socket-tee-1-1-4.html
+  weight: 1.87
+
+single_socket_tee:
+  price: 14.92
+  quantity: 8
+  url: http://www.simplifiedbuilding.com/store/components/kee-klamp/10-7-single-socket-tee-1-1-4.html
+  weight: 0.99
+
+extra_heavy_flange:
+  diameter: 5.87
+  price: 37.67
+  quantity: 4
+  url: http://www.simplifiedbuilding.com/store/components/kee-klamp/60-7-extra-heavy-flange-1-1-4.html
+  weigth: 2.87
+
+
+# Pipe properties
+
+leg:
+  quantity: 4
+
+shelf_support:
+  quantity: 4
+
+short_crosspiece:
+  quantity: 4
