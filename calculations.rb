@@ -98,5 +98,10 @@ def sum(column)
   prices.inject(0, :+)
 end
 
-puts "Total cost: $#{sum("price").round(2)}"
-puts "Total weight of frame: #{sum("weight").round(1)} lbs"
+total_price  = sum("price").round(2)
+frame_weight = sum("weight").round(1)
+table_weight = frame_weight + @properties["block"]["weight"]
+
+puts "Total cost: $#{total_price}"
+puts "Total weight of frame: #{frame_weight} lbs"
+puts "Total table weight #{table_weight}"

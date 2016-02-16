@@ -8,7 +8,7 @@ block:
   width: 84
   length: 36
   depth: 1.5
-  weigth: 150
+  weight: 150
 
 table:
   width: 84
