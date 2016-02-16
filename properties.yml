@@ -17,11 +17,12 @@ table:
   bleed: 1 # how far from the edges of the block to put the flanges
 
 pipe:
-  url: http://www.simplifiedbuilding.com/store/materials/pipe/size-7-gator-tubing-12-gage-1-1-4.html
-  size: 7
-  outside_diameter: 1.660
   bore_diameter: 1.25
+  outside_diameter: 1.660
   price: 4.79
+  size: 7
+  url: http://www.simplifiedbuilding.com/store/materials/pipe/size-7-gator-tubing-12-gage-1-1-4.html
+  weight: 1.807
 
 # General Materials
 
@@ -50,7 +51,7 @@ extra_heavy_flange:
   price: 37.67
   quantity: 4
   url: http://www.simplifiedbuilding.com/store/components/kee-klamp/60-7-extra-heavy-flange-1-1-4.html
-  weigth: 2.87
+  weight: 2.87
 
 
 # Pipe properties
