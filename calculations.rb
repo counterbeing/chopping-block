@@ -93,7 +93,17 @@ add_pipe_item("leg", calculate_leg_length)
 add_pipe_item("shelf_support", calculate_shelf_support_length)
 add_pipe_item("short_crosspiece", calculate_short_crosspiece_length)
 
-tp @item_list
+def reduce_item_list(item_list)
+  item_list.each do |item|
+    identicals = item_list.select do |element|
+      element.name == item.name
+    end
+    item.quantity = identicals.count
+  end
+  item_list.each_with_object([]) {|v, o| o.push(v) unless o.any?{|i| i.name == v.name } }
+end
+
+tp reduce_item_list(@item_list)
 
 def sum(column)
   prices = @item_list.map {|item| item.send(column)}

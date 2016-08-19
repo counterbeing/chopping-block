@@ -14,7 +14,7 @@ table:
   width: 84
   length: 36
   height: 35
-  bleed: 1 # how far from the edges of the block to put the flanges
+  bleed: 1.25 # how far from the edges of the block to put the flanges
 
 pipe:
   bore_diameter: 1.25
