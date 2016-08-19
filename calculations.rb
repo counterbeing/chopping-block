@@ -38,8 +38,6 @@ add_simple_item("three_socket_tee")
 add_simple_item("single_socket_tee")
 add_simple_item(@flange)
 
-
-
 def weight_of_pipe_by(length)
   unit_weight = @properties["pipe"]["weight"]
   (length/12) * unit_weight
@@ -69,8 +67,7 @@ def calculate_leg_length
   goal_height - (block_depth + added_castor_height)
 end
 
-# How much we need to account for a flange to a tee joint
-# connection.
+# How much we need to account for a flange to a tee joint connection.
 def flange_offset
   flange_base_diameter = @properties[@flange]["diameter"]
   pipe_diameter = @properties["pipe"]["outside_diameter"]
@@ -100,7 +97,9 @@ def reduce_item_list(item_list)
     end
     item.quantity = identicals.count
   end
-  item_list.each_with_object([]) {|v, o| o.push(v) unless o.any?{|i| i.name == v.name } }
+  item_list.each_with_object([]) do |v, o| 
+    o.push(v) unless o.any?{|i| i.name == v.name } 
+  end    
 end
 
 tp reduce_item_list(@item_list)
